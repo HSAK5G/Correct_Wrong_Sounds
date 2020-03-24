@@ -6,14 +6,14 @@
   <title>Correct or Wrong</title>
 
   <script type="text/javascript">
-    var correct = new Audio();
-    correct.src = "correct_sound.mp3";
+    var correct = new Audio("correct_sound.mp3");
+    var wrong = new Audio("incorrect_sound.mp3");
   </script>
 </head>
 
 <body>
   <img src="check.png" onmousedown="correct.play()">
-  <img src="wrong.jpg">
+  <img src="wrong.jpg" onmousedown="wrong.play()">
 
 </body>
 
